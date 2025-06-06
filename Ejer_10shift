@@ -1,0 +1,14 @@
+let listaReproduccion = ["Cancion1", "Cancion2", "Cancion3", "Cancion4"];
+
+function empezarConCancionDestacada() {
+  let cancionQuitada = listaReproduccion.shift();
+  
+  console.log("Canción destacada removida: " + cancionQuitada);
+
+  console.log("Lista de reproducción actualizada:");
+  for (let i = 0; i < listaReproduccion.length; i++) {
+    console.log((i + 1) + ". " + listaReproduccion[i]);
+  }
+}
+
+empezarConCancionDestacada();

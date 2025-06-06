@@ -1,0 +1,17 @@
+estudiantes = [
+    {"nombre": "Rosa", "nota": 85},
+    {"nombre": "Alejandro", "nota": 45},
+    {"nombre": "Melani", "nota": 70}
+]
+
+def paso(estudiante):
+    if estudiante["nota"] >= 60:
+        return True
+    else:
+        return False
+
+aprobados = list(filter(paso, estudiantes))
+
+print("Estudiantes que aprobaron:")
+for persona in aprobados:
+    print(persona["nombre"], "-", persona["nota"])

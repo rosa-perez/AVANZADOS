@@ -1,0 +1,13 @@
+function verificarTesoro(listaDeAreas, tesoroABuscar) {
+  if (listaDeAreas.includes(tesoroABuscar)) {
+    console.log("¡Tesoro encontrado! ");
+  } else {
+    console.log("No hay tesoro en esta área. ");
+  }
+}
+
+let mapa = ["cueva", "playa", "bosque", "montaña", "laguna"];
+
+let tesoro = "bosque";
+
+verificarTesoro(mapa, tesoro);

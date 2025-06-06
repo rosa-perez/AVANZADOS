@@ -1,0 +1,11 @@
+precios_sin_iva = [100, 250, 50, 80]
+def agregar_iva(precio):
+    iva = precio * 0.21
+    total = precio + iva
+    return total
+
+precios_con_iva = list(map(agregar_iva, precios_sin_iva))
+
+print("Precios con IVA incluido:")
+for p in precios_con_iva:
+    print(p)

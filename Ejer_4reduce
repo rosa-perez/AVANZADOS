@@ -1,0 +1,9 @@
+palabras = ["Hola", "mundo", "esto", "es", "JS"]
+
+def unir_frase(palabra1, palabra2):
+    return palabra1 + " " + palabra2
+
+frase_completa = reduce(unir_frase, palabras)
+
+print("Frase completa:")
+print(frase_completa)

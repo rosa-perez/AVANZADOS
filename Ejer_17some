@@ -1,0 +1,19 @@
+function verificarDescuento(listaDeCursos) {
+  let hayDescuento = listaDeCursos.some(function(curso) {
+    return curso.tieneDescuento === true;
+  });
+
+  if (hayDescuento) {
+    console.log("¡Hay al menos un curso con descuento! 🎉");
+  } else {
+    console.log("Ningún curso tiene descuento. ");
+  }
+}
+
+let cursos = [
+  { nombre: "JavaScript Básico", tieneDescuento: false },
+  { nombre: "Python Intermedio", tieneDescuento: false },
+  { nombre: "HTML para principiantes", tieneDescuento: true }
+];
+
+verificarDescuento(cursos);

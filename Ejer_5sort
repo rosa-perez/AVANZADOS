@@ -1,0 +1,15 @@
+productos = [
+    {"nombre": "Mouse", "precio": 20},
+    {"nombre": "Monitor", "precio": 150},
+    {"nombre": "Teclado", "precio": 50}
+]
+
+def ordenar_por_precio(lista_productos):
+    lista_productos.sort(key=lambda p: p["precio"])
+    return lista_productos
+
+productos_ordenados = ordenar_por_precio(productos)
+
+print("Catálogo ordenado de menor a mayor precio:")
+for p in productos_ordenados:
+    print(p["nombre"], "-", "Q", p["precio"])

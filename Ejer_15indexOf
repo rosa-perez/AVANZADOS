@@ -1,0 +1,15 @@
+function ubicacionDelPaquete(recorrido, paqueteActual) {
+  let posicion = recorrido.indexOf(paqueteActual);
+
+  if (posicion !== -1) {
+    console.log("El paquete está en la posición: " + posicion);
+  } else {
+    console.log("El paquete no se encuentra en el recorrido.");
+  }
+}
+
+let recorridoEntrega = ["Bodega", "Oficina", "Almacén", "Transporte", "DestinoFinal"];
+
+let lugarActual = "Almacén";
+
+ubicacionDelPaquete(recorridoEntrega, lugarActual);

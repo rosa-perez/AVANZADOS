@@ -1,0 +1,22 @@
+function convertirRespuestaEnArreglo(respuesta) {
+  let arregloLetras = Array.from(respuesta);
+
+  console.log("Arreglo de letras:", arregloLetras);
+
+  let letrasCorrectas = ['a', 'b', 'c'];
+
+  let contieneCorrectas = false;
+
+  for (let i = 0; i < arregloLetras.length; i++) {
+    if (letrasCorrectas.includes(arregloLetras[i])) {
+      contieneCorrectas = true;
+      break; // Si encontramos una, paramos
+    }
+  }
+
+  if (contieneCorrectas) {
+    console.log("La respuesta contiene letras correctas.");
+  } else {
+    console.log("La respuesta no contiene letras correctas.");
+  }
+}

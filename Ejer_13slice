@@ -1,0 +1,10 @@
+def recortarImagen(imagen, fila_inicio, fila_fin, col_inicio, col_fin):
+    imagen_recortada = []
+
+    for i in range(fila_inicio, fila_fin):
+        fila = imagen[i][col_inicio:col_fin]
+        imagen_recortada.append(fila)
+
+    print("Sección recortada de la imagen:")
+    for fila in imagen_recortada:
+        print(fila)

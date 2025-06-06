@@ -1,0 +1,10 @@
+def combinarListasDeCompra(lista1, lista2):
+    lista_completa = lista1 + lista2
+
+    print("Lista de compras combinada:")
+    print(lista_completa)
+
+cliente1 = ["pan", "leche", "huevos"]
+cliente2 = ["arroz", "fideos", "salsa"]
+
+combinarListasDeCompra(cliente1, cliente2)

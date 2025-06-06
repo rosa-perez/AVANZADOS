@@ -1,0 +1,12 @@
+let tareas = ["Lavar platos", "Estudiar para examen", "Comprar comida"];
+
+function priorizarTarea(nombreTarea) {
+  tareas.unshift(nombreTarea);
+  
+  console.log("Lista de tareas actualizada:");
+  for (let i = 0; i < tareas.length; i++) {
+    console.log((i + 1) + ". " + tareas[i]);
+  }
+}
+
+priorizarTarea("Entregar proyecto de programación");

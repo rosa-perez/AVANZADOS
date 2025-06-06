@@ -1,0 +1,15 @@
+estudiantes = [
+    {"nombre": "Rosa", "nota": 85},
+    {"nombre": "Alejandro", "nota": 45},
+    {"nombre": "Melani", "nota": 70}
+]
+
+def contar_aprobados(contador, estudiante):
+    if estudiante["nota"] >= 60:
+        return contador + 1
+    else:
+        return contador
+
+total_aprobados = reduce(contar_aprobados, estudiantes, 0)
+
+print("Cantidad de estudiantes que aprobaron:", total_aprobados)

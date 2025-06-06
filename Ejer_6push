@@ -1,0 +1,15 @@
+let catalogo = [
+  { nombre: "Camisa", precio: 150 },
+  { nombre: "Pantalón", precio: 300 }
+];
+
+function agregarProducto(nombre, precio) {
+  let productoNuevo = { nombre: nombre, precio: precio };
+  
+  catalogo.push(productoNuevo);
+  
+  console.log("Catálogo actualizado:");
+  for (let i = 0; i < catalogo.length; i++) {
+    console.log(catalogo[i].nombre + " - $" + catalogo[i].precio);
+  }
+}

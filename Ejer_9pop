@@ -1,0 +1,18 @@
+let colaDeEspera = ["Jose", "Melani", "Saul", "Lucia"];
+
+function removerUltimoCliente() {
+  // Sacar el último cliente con pop
+  let clienteRemovido = colaDeEspera.pop();
+  
+  // Mostrar el cliente removido
+  console.log("Cliente atendido y removido: " + clienteRemovido);
+  
+  // Mostrar la cola actualizada
+  console.log("Cola de espera actualizada:");
+  for (let i = 0; i < colaDeEspera.length; i++) {
+    console.log((i + 1) + ". " + colaDeEspera[i]);
+  }
+}
+
+// Ejecutar la función
+removerUltimoCliente();

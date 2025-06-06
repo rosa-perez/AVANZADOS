@@ -1,0 +1,10 @@
+function enviarCorreoConfirmacion(listaAsistentes) {
+  listaAsistentes.forEach(function(asistente) {
+    console.log("Enviando correo de confirmación a: " + asistente);
+    console.log("Hola " + asistente + ", tu asistencia ha sido confirmada ");
+  });
+}
+
+let asistentes = ["Alvaro", "Luis", "Cesar", "Valeria"];
+
+enviarCorreoConfirmacion(asistentes);

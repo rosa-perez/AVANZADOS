@@ -1,0 +1,18 @@
+let productos = [
+  { nombre: "Falda", precio: 200 },
+  { nombre: "Tacones", precio: 500 },
+  { nombre: "Camiseta", precio: 150 }
+];
+
+function ordenarPorPrecio(listaProductos) {
+  listaProductos.sort(function(a, b) {
+    return a.precio - b.precio;
+  });
+
+  console.log("Productos ordenados por precio:");
+  for (let i = 0; i < listaProductos.length; i++) {
+    console.log(listaProductos[i].nombre + " - $" + listaProductos[i].precio);
+  }
+}
+
+ordenarPorPrecio(productos);
